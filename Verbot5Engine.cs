@@ -1338,8 +1338,8 @@ namespace Conversive.Verbot5
             state.Vars["_year"] = FurcTime.ToString("yyyy");
             state.Vars["_dayofweek"] = FurcTime.ToString("dddd");
             state.Vars["furrename"] = Furre.Name;
-            state.Vars["furregender"] = Furre.Gender.ToString();
-            state.Vars["furrespecies"] = Furre.DSSpecies.ToString();
+            // state.Vars["furregender"] = Furre.Gender.ToString();
+            // state.Vars["furrespecies"] = Furre.DSSpecies.ToString();
             if (input.Length == 0)
                 input = "_blank";
 
