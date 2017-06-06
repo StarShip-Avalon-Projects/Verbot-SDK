@@ -23,7 +23,7 @@
 	Verbot 5 Library may also be available under other licenses.
 */
 
-using Furcadia.Net;
+using Furcadia.Net.Dream;
 using System;
 using System.Collections;
 using System.Collections.Generic;
