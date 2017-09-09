@@ -44,6 +44,7 @@ using System.Reflection;
 // as shown below:
 
 [assembly: AssemblyVersion("5.0.0.6")]
+[assembly: AssemblyFileVersion("5.0.0.6")]
 
 // In order to sign your assembly you must specify a key to use. Refer to the Microsoft .NET
 // Framework documentation for more information on assembly signing.
@@ -61,6 +62,6 @@ using System.Reflection;
 // located in the project directory, you would specify the AssemblyKeyFile attribute as [assembly:
 // AssemblyKeyFile("..\\..\\mykey.snk")] (*) Delay Signing is an advanced option - see the Microsoft
 // .NET Framework documentation for more information on this.
-[assembly: AssemblyDelaySign(false)]
-[assembly: AssemblyKeyFile("")]
-[assembly: AssemblyKeyName("")]
+//[assembly: AssemblyDelaySign(false)]
+//[assembly: AssemblyKeyFile("")]
+//[assembly: AssemblyKeyName("")]

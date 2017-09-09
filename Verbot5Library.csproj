@@ -13,7 +13,7 @@
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>Verbot5Library</AssemblyName>
-    <AssemblyOriginatorKeyFile>Verbot5Library.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Verbot.pfx</AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -205,7 +205,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Verbot5Library.pfx" />
+    <None Include="Verbot.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
