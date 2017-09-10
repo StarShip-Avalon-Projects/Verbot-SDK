@@ -53,7 +53,7 @@ namespace Conversive.Verbot5
 
         public static string MakeCSV(List<Dictionary<string, string>> data, char fieldDelimiter, char textDelimiter)
         {
-            return ConversiveGeneralTextToolbox.MakeCSV(data, fieldDelimiter, textDelimiter, true);
+            return MakeCSV(data, fieldDelimiter, textDelimiter, true);
         }
 
         public static string MakeCSV(List<Dictionary<string, string>> data, char fieldDelimiter, char textDelimiter, bool bAddHeaderRow)
