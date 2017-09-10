@@ -1,0 +1,38 @@
+﻿Verbots basic knowledgebase files are pretty simple to understand but only if you have the source.
+
+You must already know that it is built on C#. With that said, conditions structures are built like a equal scale.
+If you save a variable: <?csharpvars["[something]"] = "[something]";?>
+To retrieve it you do: (string)vars["[something"] == "[something]"
+
+The retrieval process is the condition. It can do a lot of things with variables. Verbots has set variables with the SDK such as:
+
+[_time]
+[_time24]
+[_date]
+[_month]
+[_dayofmonth]
+[_year]
+[_dayofweek]
+[_input]
+[_lastinput]
+[_lastoutput]
+
+All of which is automatically made when you start the knowledge base. So if you want your Verbot 
+to greet differently at 2 o'clock in the morning in your _startup (you can make it automatically start 
+this command) command you do something like this:
+
+Inputs: _startup
+Outputs
+Output: "It's 2 o'clock, why are you awake?"
+Condition: (string)vars["_time24"] == "2:00"
+
+When it is 2 in the morning your verbot will greet with your output.
+Alot of the advanced functioning is removed from the real version in the SDK. Being that all the information 
+is gone and you don't have a working original copy let me give you the decompiled project files for the full version.
+
+You can get it at Verbots Shutdown
+
+Looking throughout the code you can get more information and implement it in your application.
+
+Hopefully you can get it working. (please note I didn't link the references in the package, if you do so 
+you might be able to start the applications)
