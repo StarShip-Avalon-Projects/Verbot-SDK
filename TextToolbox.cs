@@ -527,13 +527,13 @@ namespace Conversive.Verbot5
 
             while (start != -1)
             {
-                if (!TextToolbox.IsEscaped(text, start))
+                if (!IsEscaped(text, start))
                 {
-                    end = TextToolbox.FindNextMatchingChar(text, start);
+                    end = FindNextMatchingChar(text, start);
                     if (end != -1)
                     {
                         string synonymName = text.Substring(start + 1, end - start - 1).Trim().ToLower();
-                        if (synonyms.ContainsKey(synonymName) && !TextToolbox.IsInCommand(text, start, end - start))
+                        if (synonyms.ContainsKey(synonymName) && !IsInCommand(text, start, end - start))
                         {
                             Synonym syn = ((Synonym)synonyms[synonymName]);
                             if (syn.Phrases.Count > 0)
