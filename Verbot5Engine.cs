@@ -519,7 +519,7 @@ namespace Conversive.Verbot5
             return new Reply(outputText, agentText, outputCmd, matchBest.InputRecognizer.RuleId, matchBest.ConfidenceFactor, this.knowledgeBaseItem);
         }
 
-        public Reply GetReply(FURRE Furre, string input, string lastfired, Hashtable vars, string prependOutput)
+        public Reply GetReply(Furre Furre, string input, string lastfired, Hashtable vars, string prependOutput)
         {
             List<Match> matches = new List<Match>();
             //do replacements, strip áccents is done in ReplaceOnInput if there are no input replacements
@@ -1129,7 +1129,7 @@ namespace Conversive.Verbot5
         public string AgentText;
         public string Cmd;
         public double ConfidenceFactor;
-        public FURRE Furre;
+        public Furre Furre;
         public KnowledgeBaseItem KBItem;
         public string RuleId;
         public string Text;
@@ -1140,7 +1140,7 @@ namespace Conversive.Verbot5
 
         public Reply(string text, string agentText, string cmd, string ruleId, double cf, KnowledgeBaseItem knowledgeBaseItem)
         {
-            this.Furre = new FURRE();
+            this.Furre = new Furre();
             this.Text = text;
             this.AgentText = agentText;
             this.Cmd = cmd;
@@ -1149,7 +1149,7 @@ namespace Conversive.Verbot5
             this.KBItem = knowledgeBaseItem;
         }
 
-        public Reply(FURRE Furre, string text, string agentText, string cmd, string ruleId, double cf, KnowledgeBaseItem knowledgeBaseItem)
+        public Reply(Furre Furre, string text, string agentText, string cmd, string ruleId, double cf, KnowledgeBaseItem knowledgeBaseItem)
         {
             this.Furre = Furre;
             this.Text = text;
@@ -1323,7 +1323,7 @@ namespace Conversive.Verbot5
             return null; //if there's no reply, return null
         }
 
-        public Reply GetReply(FURRE Furre, string input, State state)
+        public Reply GetReply(Furre Furre, string input, State state)
         {
             DateTime FurcTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow,
         TimeZoneInfo.FindSystemTimeZoneById("Central Standard Time"));
