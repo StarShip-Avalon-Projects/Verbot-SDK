@@ -13,7 +13,7 @@
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
     <AssemblyName>Verbot5Library</AssemblyName>
-    <AssemblyOriginatorKeyFile>Verbot.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>VerbotSDK.snk</AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -195,6 +195,7 @@
   <ItemGroup>
     <None Include="README.md" />
     <None Include="Verbot.pfx" />
+    <None Include="VerbotSDK.snk" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AssemblyFileVersion.tt">
